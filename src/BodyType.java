@@ -45,46 +45,53 @@ public enum BodyType {
                                                                         new Integer[] {20, 0, 50, 1, 20, 4},
                                                                         new Integer[] {25, 0, 30, 4, 30, 4});
 
-    private final String[] types;
-    private final String[] type2;
-    private final String type3;
-    private final String type4;
-    private final String type5;
-    private final String tedioreSpecialType;
+    private final String[] bodyNames;
+    private final Integer[] body1Stats;
+    private final Integer[] body2Stats;
+    private final Integer[] body3Stats;
+    private final Integer[] body4Stats;
+    private final Integer[] body5Stats;
+    private final Integer[] tedioreBodyStats;
 
     
-    BodyType(String type1, String type2, String type3, String type4,
-            String type5, String tediore) {
-        this.type1 = type1;
-        this.type2 = type2;
-        this.type3 = type3;
-        this.type4 = type4;
-        this.type5 = type5;
-        this.tedioreSpecialType = tediore;
+    BodyType(String[] bodyNames, Integer[] body1Stats, Integer[] body2Stats, Integer[] body3Stats,
+            Integer[] body4Stats, Integer[] body5Stats, Integer[] tedioreBodyStats) {
+        this.bodyNames = bodyNames;
+        this.body1Stats = body1Stats;
+        this.body2Stats = body2Stats;
+        this.body3Stats = body3Stats;
+        this.body4Stats = body4Stats;
+        this.body5Stats = body5Stats;
+        this.tedioreBodyStats = tedioreBodyStats;
     }
 
-    public String getType1() {
-        return type1;
+    public String getbodyNames() {
+        return bodyNames;
     }
 
-    public String getType2() {
-        return type2;
+    public String getbody1Stats() {
+        return body1Stats;
     }
 
-    public String getType3() {
-        return type3;
+    public String getbody2Stats() {
+        return body2Stats;
     }
 
-    public String getType4() {
-        return type4;
+    public String getbody3Stats() {
+        return body3Stats;
     }
 
-    public String getType5() {
-        return type5;
+    public String getbody4Stats() {
+        return body4Stats;
     }
 
-    public String getTypeTediore() {
-        return tedioreSpecialType;
+    public String getbody5Stats() {
+        return body5Stats;
+    }
+
+
+    public String getTedioreBodyStats() {
+        return tedioreBodyStats;
     }
 
 }
