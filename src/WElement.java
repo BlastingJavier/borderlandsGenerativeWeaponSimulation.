@@ -3,10 +3,10 @@ package weapon;
 
 public enum WElement {
     
-    INCENDIARY(1.2, 0.5, 0.8, 60, ["Combustion", "Burning", "Incendiary", "Flaming"]),
-    SHOCK(0.9, 1.5, 0.9, 100, ["Fulgurating", "Lightning", "Static", "Shock"]),
-    EXPLOSIVE(1.0, 1.0, 1.0, 150, ["Pestilent", "Vitriolic", "Caustic", "Corrosive"]),
-    CORROSIVE(0.8, 0.8, 2.0, 40, ["Erupting", "Detonating", "Blast", "Exploding"]);
+    INCENDIARY(1.2, 0.5, 0.8, 60, new String[] {"Combustion", "Burning", "Incendiary", "Flaming"}),
+    SHOCK(0.9, 1.5, 0.9, 100, new String[] {"Fulgurating", "Lightning", "Static", "Shock"}),
+    EXPLOSIVE(1.0, 1.0, 1.0, 150, new String[] {"Pestilent", "Vitriolic", "Caustic", "Corrosive"}),
+    CORROSIVE(0.8, 0.8, 2.0, 40, new String[] {"Erupting", "Detonating", "Blast", "Exploding"});
 
     private final double cFlesh;
     private final double cShield;
