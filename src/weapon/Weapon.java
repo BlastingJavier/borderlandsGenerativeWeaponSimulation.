@@ -10,7 +10,7 @@ import builder.WeaponBuilder;
 import manufactuer.Manufactuer;
 
 
-public abstract class Weapon implements IWeapon{
+public abstract class WeaponType implements IWeapon{
 
     //Name
     private final BodyType bodyTypes;
@@ -117,14 +117,14 @@ public abstract class Weapon implements IWeapon{
 
 }
 
-public class RevolverWeapon extends Weapon {
+public class WeaponTypeRevolver extends WeaponType {
     @Override
     public String toString(){
         return "Weapon type: Revolver";
     }
 }
 
-public class RepeaterPistolsWeapon extends Weapon {
+public class WeaponTypeRepeaterPistol extends WeaponType {
 
     @Override
     public String toString(){
@@ -132,70 +132,70 @@ public class RepeaterPistolsWeapon extends Weapon {
     }
 }
 
-public class SMGWeapon extends Weapon {
+public class WeaponTypeSMGWeapon extends WeaponType {
     @Override
     public String toString(){
         return "Weapon type: Revolver";
     }
 }
 
-public class CombatRifleWeapon extends Weapon {
+public class WeaponTypeCombatRifle extends WeaponType {
 
     @Override
     public String toString(){
         return "Weapon type: Revolver";
     }
 
-    public class MachineGun extends CombatRifleWeapon {
+    public class WeaponTypeMachineGun extends WeaponTypeCombatRifle {
 
     }
 
-    public class CombatRifle extends CombatRifleWeapon {
+    public class WeaponTypeCombatRifle extends WeaponTypeCombatRifle {
 
     }
 
 }
 
-public class ShotgunWeapon extends Weapon {
+public class WeaponTypeShotgun extends WeaponType {
     @Override
     public String toString(){
         return "Weapon type: Revolver";
     }
 
-    public class AssaultShotgun extends ShotgunWeapon {
+    public class WeaponTypeAssaultShotgun extends WeaponTypeShotgun {
 
     }
 
-    public class CombatShotgun extends ShotgunWeapon {
+    public class WeaponTypeCombatShotgun extends WeaponTypeShotgun {
 
     }
 }
 
-public class SniperRifleWeapon extends Weapon {
+public class WeaponTypeSniperRifle extends WeaponType {
     private double stability;
     @Override
     public String toString(){
         return "Weapon type: Revolver";
     }
 
-    public class SemiAutoSniperRifle extends SniperRifleWeapon {
+    public class WeaponTypeSemiAutoSniperRifle extends WeaponTypeSniperRifle {
 
     }
 
-    public class PumpActionSniperRifle extends SniperRifleWeapon {
+    public class WeaponTypePumpActionSniperRifle extends WeaponTypeSniperRifle {
 
     }
 
 }
 
-public class RocketLauncherWeapon extends Weapon {
+public class WeaponTypeRocketLauncher extends WeaponType {
     @Override
     public String toString(){
         return "Weapon type: Revolver";
     }
 }
 
-public class EridianWeapon extends Weapon {
+public class WeaponTypeEridian extends WeaponType {
     private double coolDownRate;
     @Override
     public String toString(){
